@@ -24,7 +24,7 @@ weatherForm.addEventListener('submit', (e) => {
                 writePOne.textContent = data.error
             } else {
                 writePOne.textContent = data.location
-                writePTwo.textContent = data.forecast.summmary
+                writePTwo.textContent = data.forecast
                 console.log(data.location)
                 console.log(data.forecast)
             }

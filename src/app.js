@@ -58,6 +58,13 @@ app.get('/weather', (req, res) => {
     })
 })
 
+app.get('/dinosaur', (req, res) => {
+    res.render('dinosaur', {
+        title: 'Dinosaurs',
+        name: 'Noah Hoyles'
+    })
+})
+
 app.get('/products', (req, res) => {
     if (!req.query.search) {
         return res.send({
